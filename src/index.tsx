@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import "@fontsource/noto-sans-kr/400.css"; // Specify weight
+import "@fontsource/noto-sans-kr/700.css"; // Specify weight
+import "./index.css";
+
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <React.StrictMode>
     <App />
