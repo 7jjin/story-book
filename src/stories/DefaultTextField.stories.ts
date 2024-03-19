@@ -17,6 +17,7 @@ const meta = {
     iconPath: { control: "text", description: "이미지의 경로", defaultValue: "" },
     onIconClick: { action: "clicked", description: "버튼 클릭 이벤트" },
     isError: { control: "boolean", description: "에러 상태 여부", defaultValue: false },
+    id: { control: "text", description: "텍스트 필드의 id", defaultValue: "" },
   },
 } satisfies Meta<typeof DefaultTextField>;
 
@@ -31,5 +32,6 @@ export const Default: Story = {
     value: "",
     errormessage: "텍스트를 확인해주세요",
     isError: false,
+    id: "",
   },
 };
