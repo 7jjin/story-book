@@ -6,6 +6,9 @@ module.exports = {
     fontFamily: {
       body: ["Noto Sans KR"],
     },
+    borderRadius: {
+      "primary-button": "5px",
+    },
     fontSize: {
       xs: [
         "12px",
