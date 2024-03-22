@@ -13,7 +13,11 @@ export default function TagList<T extends string>({ tagList, onTagClick }: ITagL
       onClick={(event) => {
         const eventTarget = event.target as HTMLButtonElement;
         const tag = eventTarget.textContent as T;
-        onTagClick(tag);
+
+        if (onTagClick) {
+          // onTagClick이 있을 때만 호출하도록 체크
+          onTagClick(tag);
+        }
       }}
     >
       {tagList.map((tag) => (
