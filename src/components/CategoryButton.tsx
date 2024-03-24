@@ -14,7 +14,7 @@ export default function CategoryButton({ iconPath, iconAlt, text, onClick }: ICa
         rounded-button-default
         border
         border-primary
-        text-mono100
+        text-primary
         text-base
         font-bold
         pl-[22px]
