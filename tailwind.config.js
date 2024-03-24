@@ -7,7 +7,7 @@ module.exports = {
       body: ["Noto Sans KR"],
     },
     borderRadius: {
-      "primary-button": "5px",
+      "button-default": "5px",
       "tag-button": "17.5px",
     },
     fontSize: {
