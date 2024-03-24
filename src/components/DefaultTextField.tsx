@@ -35,6 +35,7 @@ export default function DefaultTextField({
         className={`text-primart border-b border-primary ${borderColor}`}
       >
         <input
+          data-testid={id}
           id={id}
           className="outline-none"
           placeholder={placeholder}

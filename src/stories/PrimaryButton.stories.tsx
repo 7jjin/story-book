@@ -1,30 +1,42 @@
 import type { Meta, StoryObj } from "@storybook/react";
+
 import PrimaryButton from "../components/PrimaryButton";
 
 const meta = {
-  title: "TextFields/PrimaryButton", //경로
+  title: "Buttons/PrimaryButton",
   component: PrimaryButton,
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   decorators: [
-    (Story: any) => (
-      <div style={{ width: "360px", border: "1px solid red" }}>
+    (Story) => (
+      <div style={{ width: "360px" }}>
         <Story />
       </div>
     ),
   ],
+  tags: ["autodocs"],
   argTypes: {
     theme: {
       control: {
         type: "select",
-        option: ["dark", "light", "socail", "text"],
+        options: ["dark", "light", "social", "text"],
       },
+      description: "버튼 테마",
+      defaultValue: "dark",
     },
-    children: { control: "text", description: "버튼 text", defaultValue: "icon" },
-    onClick: { control: "clicked", description: "버튼 클릭 이벤트" },
-    isDisabled: { control: "boolean", description: "버튼 비활성화 여부", defaultValue: false },
+    children: {
+      control: "text",
+      description: "버튼 text",
+      defaultValue: "icon",
+    },
+    disabled: {
+      control: "boolean",
+      description: "버튼 비활성화 여부",
+      defaultValue: true,
+    },
+
+    onClick: { action: "clicked", description: "버튼 클릭 이벤트" },
   },
 } satisfies Meta<typeof PrimaryButton>;
 
@@ -34,28 +46,39 @@ type Story = StoryObj<typeof meta>;
 export const Dark: Story = {
   args: {
     children: "Button",
-    isDisabled: false,
     theme: "dark",
+    disabled: false,
   },
 };
+
 export const Light: Story = {
   args: {
     children: "Button",
-    isDisabled: false,
     theme: "light",
+    disabled: false,
   },
 };
+
 export const Social: Story = {
   args: {
     children: "Button",
-    isDisabled: false,
     theme: "social",
+    disabled: false,
   },
 };
+
 export const Text: Story = {
   args: {
     children: "Button",
-    isDisabled: false,
     theme: "text",
+    disabled: false,
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    children: "Button",
+    theme: "dark",
+    disabled: true,
   },
 };
