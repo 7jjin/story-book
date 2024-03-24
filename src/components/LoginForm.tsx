@@ -34,7 +34,7 @@ export default function LoginForm() {
         iconAlt="delete"
         placeholder="비밀번호를 입력해주세요"
         onChange={(e) => {
-          setEmail(e.target.value);
+          setPassword(e.target.value);
         }}
         value={password}
         isError={false}
