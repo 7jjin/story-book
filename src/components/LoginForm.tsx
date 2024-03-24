@@ -40,7 +40,7 @@ export default function LoginForm() {
         isError={false}
         id="password"
       />
-      <PrimaryButton onClick={() => {}} isDisabled={!email || !password} theme="dark">
+      <PrimaryButton onClick={() => {}} disabled={!email || !password} theme="dark">
         로그인
       </PrimaryButton>
     </div>
