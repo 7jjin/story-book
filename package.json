@@ -1,7 +1,16 @@
 {
-  "name": "storybooktest",
+  "name": "jin-Hyeong-storybook",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "files": [
+    "src/components",
+    "index.css",
+    "src/mixsins"
+  ],
+  "main": "src/components/index.tsx",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@fontsource/noto-sans-kr": "^5.0.18",
     "@testing-library/jest-dom": "^5.17.0",
