@@ -6,7 +6,7 @@ interface IDefaultTextFieldProps {
   errormessage: string;
   iconPath: string;
   iconAlt: string;
-  onIconClick?: React.MouseEventHandler<HTMLButtonElement>;
+  onIconClick: React.MouseEventHandler<HTMLButtonElement>;
   placeholder: string;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   value: string;
